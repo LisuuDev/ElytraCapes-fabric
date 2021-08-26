@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "pl.devlisuu.prettycapes.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "ElytraFeatureRendererMixin",
+    "CapeFeatureRendererMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

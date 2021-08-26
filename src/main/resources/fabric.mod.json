@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "prettycapes",
+  "version": "${version}",
+  "name": "PrettyCapes",
+  "description": "I forgot to add description bruh",
+  "authors": [
+    "DevLisuu"
+  ],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "icon.png",
+  "environment": "client",
+  "mixins": [
+    "prettycapes.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*",
+    "minecraft": "1.17.*"
+  }
+}
