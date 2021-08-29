@@ -7,6 +7,8 @@ This Mod makes it so default Minecraft capes (like account migration one) appear
 Looks better in my opinion.
  
 It's my first ever Minecraft Mod made for Fabric. *(no one asked)*
+
+![Before and After Image](https://i.imgur.com/aZlZrPI.png "Before and After")
  
 ## Forge Port
 Might port it to Forge someday. It's really not **that** hard to do it yourself.
