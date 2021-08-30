@@ -7,8 +7,6 @@
     "ElytraFeatureRendererMixin",
     "CapeFeatureRendererMixin"
   ],
-  "client": [
-  ],
   "injectors": {
     "defaultRequire": 1
   }
