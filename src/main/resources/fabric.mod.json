@@ -7,16 +7,15 @@
   "authors": [
     "DevLisuu"
   ],
-  "license": "GPL-3.0",
+  "license": "LGPL-3.0-or-later",
   "icon": "icon.png",
   "environment": "client",
   "mixins": [
     "prettycapes.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.11.6",
-    "fabric": "*",
-    "minecraft": "1.17.*"
+    "fabricloader": ">=0.12.12",
+    "minecraft": ">=1.17"
   },
   "breaks": {
     "optifabric": "*"
