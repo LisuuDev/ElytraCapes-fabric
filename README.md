@@ -16,4 +16,4 @@ Might port it to Forge someday. It's really not **that** hard to do it yourself.
 ## Building from source
 *Why would anyone ever do that?*
 
-Just run `gradlew build` in terminal and go to `build/libs` folder for output.
+Just run `./gradlew build` in terminal and go to `build/libs` folder for output.
