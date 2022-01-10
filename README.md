@@ -6,7 +6,7 @@
 This Mod makes it so default Minecraft capes (like account migration one) appear **BIG** like when wearing an Elytra.
 Looks better in my opinion.
  
-It's my first ever Minecraft Mod made for Fabric. *(no one asked)*
+It's my first ever Minecraft Mod made for Fabric.
 
 ![Before and After Image](https://i.imgur.com/aZlZrPI.png "Before and After")
  
@@ -14,6 +14,6 @@ It's my first ever Minecraft Mod made for Fabric. *(no one asked)*
 Might port it to Forge someday. It's really not **that** hard to do it yourself.
 
 ## Building from source
-*Why would anyone ever do that?*
+*Why would anyone ever do that tho*
 
 Just run `./gradlew build` in terminal and go to `build/libs` folder for output.
