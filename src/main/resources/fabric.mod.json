@@ -8,7 +8,7 @@
     "DevLisuu"
   ],
   "license": "LGPL-3.0-or-later",
-  "icon": "icon.png",
+  "icon": "assets/prettycapes/icon.png",
   "environment": "client",
   "mixins": [
     "prettycapes.mixins.json"
