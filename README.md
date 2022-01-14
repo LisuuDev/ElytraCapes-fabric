@@ -8,7 +8,7 @@ Looks better in my opinion.
  
 It's my first ever Minecraft Mod made for Fabric.
 
-![Before and After Image](https://i.imgur.com/aZlZrPI.png "Before and After")
+![Before and After Image](https://i.ytimg.com/vi/KbzQh-zGZHU/hqdefault.jpg "Before and After")
  
 ## Forge Port
 Might port it to Forge someday. It's really not **that** hard to do it yourself.
