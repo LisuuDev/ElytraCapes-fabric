@@ -1,4 +1,4 @@
-package pl.devlisuu.prettycapes.mixin;
+package pl.devlisuu.elytracapes.mixin;
 
 import net.minecraft.client.network.AbstractClientPlayerEntity;
 import net.minecraft.client.render.VertexConsumerProvider;

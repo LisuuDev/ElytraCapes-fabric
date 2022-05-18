@@ -1,19 +1,15 @@
-# Pretty Capes (Fabric)
-[![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/it-works-why.svg)](https://forthebadge.com)
+# Elytra Capes
 
-This Mod makes it so default Minecraft capes (like account migration one) appear **BIG** like when wearing an Elytra.
-Looks better in my opinion.
- 
-It's my first ever Minecraft Mod made for Fabric.
+Minecraft mod for Fabric and Quilt mod loaders.
 
-![Before and After Image](https://i.imgur.com/aZlZrPI.png "Before and After")
- 
-## Forge Port
-Might port it to Forge someday. It's really not **that** hard to do it yourself.
+Changes default cape style to the elytra one.
 
-## Building from source
-*Why would anyone ever do that tho*
+![Before and after image](https://raw.githubusercontent.com/DevLisuu/ElytraCapes/main/art/before-and-after.png "Before and After")
 
-Just run `./gradlew build` in terminal and go to `build/libs` folder for output.
+### Forge Support
+
+Soon.
+
+### Building from source
+
+Just run `.\gradlew build` in terminal and go to `build/libs` folder for output.

@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "id": "prettycapes",
+  "id": "elytracapes",
   "version": "${version}",
-  "name": "PrettyCapes",
-  "description": "This Mod makes it so default Minecraft capes (like account migration one) appear BIG like when wearing an Elytra.",
+  "name": "Elytra Capes",
+  "description": "Changes default cape style to the elytra one.",
   "authors": [
     "DevLisuu"
   ],
   "license": "LGPL-3.0-or-later",
-  "icon": "assets/prettycapes/icon.png",
+  "icon": "assets/elytracapes/icon.png",
   "environment": "client",
   "mixins": [
-    "prettycapes.mixins.json"
+    "elytracapes.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.12.12",
-    "minecraft": ">=1.17"
+    "fabricloader": ">=0.13.3",
+    "minecraft": ">=1.18.2"
   },
   "breaks": {
     "optifabric": "*"
