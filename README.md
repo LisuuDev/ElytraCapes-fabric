@@ -12,4 +12,4 @@ Soon.
 
 ### Building from source
 
-Just run `.\gradlew build` in terminal and go to `build/libs` folder for output.
+Run `.\gradlew build` in terminal and go to `build/libs` folder for output. Nothing fancy.
