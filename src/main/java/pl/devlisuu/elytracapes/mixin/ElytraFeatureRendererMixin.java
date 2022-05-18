@@ -8,7 +8,6 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Items;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArgs;
@@ -21,17 +20,16 @@ public abstract class ElytraFeatureRendererMixin<T extends LivingEntity> {
     private void forceElytraRendering(Args args, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i, T livingEntity, float f, float g, float h, float j, float k, float l) {
         if(livingEntity instanceof PlayerEntity) {
 
-            //Convert entity to player, so I can get more booleans in my if statements
+            // Convert entity to player, so I can get more booleans in my if statements
             AbstractClientPlayerEntity abstractPlayer = (AbstractClientPlayerEntity)livingEntity;
 
-            if(abstractPlayer.canRenderCapeTexture() && abstractPlayer.canRenderElytraTexture() && abstractPlayer.getCapeTexture() != null && abstractPlayer.isPartVisible(PlayerModelPart.CAPE)) {
+            if(abstractPlayer.canRenderElytraTexture()
+                    && !abstractPlayer.isInvisible()
+                    && abstractPlayer.isPartVisible(PlayerModelPart.CAPE)
+                    && abstractPlayer.getCapeTexture() != null) {
 
-                if(!livingEntity.isInvisible()) {
-                    args.set(0, livingEntity.getEquippedStack(EquipmentSlot.CHEST).getItem());
-                }else if(!livingEntity.getEquippedStack(EquipmentSlot.CHEST).isOf(Items.AIR)) {
-                    //Show cape if invisible but chest slot is not empty
-                    args.set(0, livingEntity.getEquippedStack(EquipmentSlot.CHEST).getItem());
-                }
+                // getItem() prevents load looping
+                args.set(0, abstractPlayer.getEquippedStack(EquipmentSlot.CHEST).getItem());
             }
         }
     }
