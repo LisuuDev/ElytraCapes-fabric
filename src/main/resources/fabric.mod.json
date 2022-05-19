@@ -3,19 +3,35 @@
   "id": "elytracapes",
   "version": "${version}",
   "name": "Elytra Capes",
-  "description": "Changes default cape style to the elytra one.",
+  "description": "Changes default cape style to elytra.",
   "authors": [
     "DevLisuu"
   ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/elytracapes",
+    "sources": "https://github.com/DevLisuu/ElytraCapes",
+    "issues": "https://github.com/DevLisuu/ElytraCapes/issues"
+  },
   "license": "LGPL-3.0-or-later",
   "icon": "assets/elytracapes/icon.png",
   "environment": "client",
+  "entrypoints": {
+    "main": [
+      "pl.devlisuu.elytracapes.ElytraCapes"
+    ],
+    "modmenu": [
+      "pl.devlisuu.elytracapes.config.ModMenuIntegration"
+    ]
+  },
   "mixins": [
     "elytracapes.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.5",
+    "fabricloader": ">=0.13.3",
     "minecraft": ">=1.18.2"
+  },
+  "recommends": {
+    "modmenu": "3.2.1"
   },
   "breaks": {
     "optifabric": "*"
