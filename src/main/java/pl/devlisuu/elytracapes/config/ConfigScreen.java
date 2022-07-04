@@ -17,11 +17,11 @@ public class ConfigScreen {
 
         final ConfigEntryBuilder entryBuilder = builder.entryBuilder();
 
-        generalCategory.addEntry(entryBuilder.startBooleanToggle(Text.of("Mod enabled"), ConfigManager.getConfig().modEnabled)
+        generalCategory.addEntry(entryBuilder.startBooleanToggle(Text.literal("Mod enabled"), ConfigManager.getConfig().modEnabled)
                 .setSaveConsumer(newValue -> ConfigManager.getConfig().modEnabled = newValue)
                 .build());
 
-        generalCategory.addEntry(entryBuilder.startEnumSelector(Text.of("Cape style"), CapeStyleEnum.class, ConfigManager.getConfig().style)
+        generalCategory.addEntry(entryBuilder.startEnumSelector(Text.literal("Cape style"), CapeStyleEnum.class, ConfigManager.getConfig().style)
                 .setSaveConsumer(newValue -> ConfigManager.getConfig().style = newValue)
                 .build());
 
