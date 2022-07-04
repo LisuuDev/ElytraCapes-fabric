@@ -13,7 +13,7 @@ public class ConfigScreen {
                 .setTitle(Text.of("Elytra Capes"))
                 .setSavingRunnable(ConfigManager.writeConfig);
 
-        final ConfigCategory generalCategory = builder.getOrCreateCategory(Text.of("You should not see this"));
+        final ConfigCategory generalCategory = builder.getOrCreateCategory(Text.literal("You should not see this"));
 
         final ConfigEntryBuilder entryBuilder = builder.entryBuilder();
 
