@@ -10,7 +10,7 @@ public class ConfigScreen {
     public static Screen build(Screen screen) {
         final ConfigBuilder builder = ConfigBuilder.create()
                 .setParentScreen(screen)
-                .setTitle(Text.of("Elytra Capes"))
+                .setTitle(Text.literal("Elytra Capes"))
                 .setSavingRunnable(ConfigManager.writeConfig);
 
         final ConfigCategory generalCategory = builder.getOrCreateCategory(Text.literal("You should not see this"));
