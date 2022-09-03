@@ -31,7 +31,7 @@
     "minecraft": ">=1.19"
   },
   "recommends": {
-    "modmenu": "4.0.4"
+    "modmenu": ">=4.0.4"
   },
   "breaks": {
     "minecraftcapes": "*",
