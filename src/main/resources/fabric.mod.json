@@ -27,8 +27,8 @@
     "elytracapes.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.9",
-    "minecraft": ">=1.19"
+    "fabricloader": ">=0.16.0",
+    "minecraft": "*"
   },
   "recommends": {
     "modmenu": ">=4.0.4"

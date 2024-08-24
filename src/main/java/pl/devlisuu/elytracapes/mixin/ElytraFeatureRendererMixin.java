@@ -2,12 +2,12 @@ package pl.devlisuu.elytracapes.mixin;
 
 import net.minecraft.client.network.AbstractClientPlayerEntity;
 import net.minecraft.client.render.VertexConsumerProvider;
-import net.minecraft.client.render.entity.PlayerModelPart;
 import net.minecraft.client.render.entity.feature.ElytraFeatureRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.player.PlayerModelPart;
 import net.minecraft.item.Items;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -27,17 +27,15 @@ public abstract class ElytraFeatureRendererMixin<T extends LivingEntity> {
                 if (livingEntity instanceof PlayerEntity) {
                     AbstractClientPlayerEntity abstractPlayer = (AbstractClientPlayerEntity) livingEntity;
 
-                    if (abstractPlayer.canRenderElytraTexture()
-                            && !abstractPlayer.isInvisible()
+                    if (!abstractPlayer.isInvisible()
                             && abstractPlayer.isPartVisible(PlayerModelPart.CAPE)
-                            && abstractPlayer.getCapeTexture() != null) {
+                            && abstractPlayer.getSkinTextures().capeTexture() != null) {
 
                         // Item in chestplate slot will always be item in chest slot
                         args.set(0, abstractPlayer.getEquippedStack(EquipmentSlot.CHEST).getItem());
                     }
                 }
-            }else if(ConfigManager.getConfig().style == CapeStyleEnum.ALWAYS_NORMAL
-                    || ConfigManager.getConfig().style == CapeStyleEnum.DISABLE_CAPES) {
+            }else if(ConfigManager.getConfig().style == CapeStyleEnum.ALWAYS_NORMAL) {
 
                 if (livingEntity instanceof PlayerEntity) {
                     AbstractClientPlayerEntity abstractPlayer = (AbstractClientPlayerEntity) livingEntity;

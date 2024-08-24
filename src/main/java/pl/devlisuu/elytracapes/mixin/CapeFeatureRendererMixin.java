@@ -27,8 +27,7 @@ public abstract class CapeFeatureRendererMixin {
     @Inject(method = "render*", at = @At("HEAD"), cancellable = true)
     public void cancelCapeRendering(MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i, AbstractClientPlayerEntity abstractClientPlayerEntity, float f, float g, float h, float j, float k, float l, CallbackInfo ci) {
         if(ConfigManager.getConfig().modEnabled) {
-            if(ConfigManager.getConfig().style == CapeStyleEnum.ALWAYS_ELYTRA
-                    || ConfigManager.getConfig().style == CapeStyleEnum.DISABLE_CAPES) {
+            if(ConfigManager.getConfig().style == CapeStyleEnum.ALWAYS_ELYTRA) {
                 ci.cancel();
             }
         }
