@@ -11,7 +11,6 @@ For configuration [Mod Menu](https://modrinth.com/mod/modmenu) is required!
 
 - Always elytra styled
 - Always flat styled
-- Disable capes
 
 ### Forge Support
 
